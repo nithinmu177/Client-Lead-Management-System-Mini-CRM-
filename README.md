@@ -2,6 +2,13 @@
 
 This workspace contains a minimal scaffold for a Mini CRM project.
 
+Install from project root
+
+```powershell
+cd "C:\Users\Umesh\OneDrive\Desktop\Project 2\mini-crm"
+npm install
+```
+
 Server (Express + MySQL)
 
 - Location: `mini-crm/server`
@@ -14,6 +21,12 @@ cp .env.example .env   # or create .env and set DB vars
 npm run dev
 ```
 
+Or from the project root:
+
+```powershell
+npm run dev
+```
+
 Database
 
 - Use `mini-crm/server/db/schema.sql` to create the database and tables.
@@ -21,6 +34,11 @@ Database
 Frontend
 
 - The React client lives in `mini-crm/client`.
+- From the project root, run it with:
+
+```powershell
+npm run client
+```
 
 Next steps
 
@@ -68,7 +86,7 @@ ADMIN_PASS=password
 JWT_SECRET=change-me
 ```
 
-- Then in `mini-crm/server` run:
+- Then from the project root run:
 
 ```powershell
 npm install
